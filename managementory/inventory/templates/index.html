@@ -1,0 +1,23 @@
+{% load compress %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load compress %}
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1
+        class="block font-sans text-xl antialiased font-semibold leading-tight tracking-normal text-transparent bg-gradient-to-tr cursor-pointer from-blue-600 to-blue-400 bg-clip-text">
+        Material Tailwind with Django!
+    </h1>
+</body>
+
+</html>
